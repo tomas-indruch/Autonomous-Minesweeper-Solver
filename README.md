@@ -17,15 +17,7 @@ An algorithmic solver engineered to autonomously clear Minesweeper grids through
 
 ## 🧠 Algorithmic Pipeline
 
-[ Board State Scan ] ──► [ Frontier Extraction ] ──► [ Subset Difference Reduction ]
-                                         │
-┌────────────────────────────────────────┴────────────────────────────────────────┐
-▼                                                                                 ▼
-[ Deterministic Action ]                                                         [ Zero-Certainty Fallback ]
-
-Flag proven mines (count == hidden)                                              - Compute joint cell probabilities
-
-Reveal proven safe (count == 0)                                                  - Execute minimal-risk probe
+[ Board State Scan ] ──► [ Frontier Extraction ] ──► [ Subset Difference Reduction ] ──► [ Deterministic Action / Zero-Certainty Fallback (probability based) ]
 
 
 ### 1. Frontier Set Reduction
