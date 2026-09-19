@@ -18,7 +18,7 @@ An algorithmic solver engineered to autonomously clear Minesweeper grids through
 ## 🧠 Algorithmic Pipeline
 
 [ Board State Scan ] ──► [ Frontier Extraction ] ──► [ Subset Difference Reduction ]
-│
+                                         │
 ┌────────────────────────────────────────┴────────────────────────────────────────┐
 ▼                                                                                 ▼
 [ Deterministic Action ]                                                         [ Zero-Certainty Fallback ]
