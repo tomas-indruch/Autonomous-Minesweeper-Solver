@@ -25,6 +25,7 @@ The algorithm scans visible tiles to form constraint equations:
 Creates list of pairs for each revealed tile 
 hidden_neighbor : number_of_nearby_mines
 By recombination get subset and reveal safe tiles.
+
 <img width="372" height="373" alt="image" src="https://github.com/user-attachments/assets/03530b17-3a25-427f-9d9f-fce64bea12ba" />
 <img width="753" height="343" alt="image" src="https://github.com/user-attachments/assets/0f301595-0092-40ef-9028-bcba76b546dd" />
 
