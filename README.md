@@ -22,12 +22,12 @@ An algorithmic solver engineered to autonomously clear Minesweeper grids through
 
 ### 1. Frontier Set Reduction
 The algorithm scans visible tiles to form constraint equations:
-$$\text{Tile}_i = \{\text{Hidden Neighbors}\} : N_{\text{mines}}$$
-If constraint $A \subset B$, a new deduced constraint is formed:
-$$B \setminus A : (N_B - N_A)$$
-Iterating this reduction resolves complex interlocking boundaries across multiple tiles without combinatorial explosion.
+Creates list of pairs for each revealed tile 
+hidden_neighbor : number_of_nearby_mines
+By recombination get subset and reveal safe tiles.
+<img width="372" height="373" alt="image" src="https://github.com/user-attachments/assets/03530b17-3a25-427f-9d9f-fce64bea12ba" />
+<img width="753" height="343" alt="image" src="https://github.com/user-attachments/assets/0f301595-0092-40ef-9028-bcba76b546dd" />
+
 
 ### 2. Probabilistic Guessing
 When no deterministic deductions exist, cumulative probability contributions from adjacent numbers are normalized across overlapping constraints. The system identifies and queries the cell with the strictly minimal joint probability of harboring a mine.
-
----
