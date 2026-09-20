@@ -32,3 +32,6 @@ By recombination get subset and reveal safe tiles.
 
 ### 2. Probabilistic Guessing
 When no deterministic deductions exist, cumulative probability contributions from adjacent numbers are normalized across overlapping constraints. The system identifies and queries the cell with the strictly minimal joint probability of harboring a mine.
+
+## Algorithmic Complexity & Limitations
+For larger grids is this program getting slower, because it calculates enormous amount of combinations which clows down the process. The fix would be to delete tiles not useful for future progress and focus only on prospective tiles.
